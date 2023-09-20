@@ -5,9 +5,10 @@ import { StudentsPerformanceComponent } from './components/students-performance/
 import { canActivate } from './auth.guard';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent }, //#TODO fix amplify after login
+  { path: 'dashboard', component: DashboardComponent }, //#TODO fix amplify after login & canactivate conflict
   { path: 'students-performance', component: StudentsPerformanceComponent, canActivate: [canActivate] },
-  { path: '**', component: DashboardComponent } //#TODO page not found 
+  { path: '**', component: DashboardComponent },//#TODO page not found
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({
