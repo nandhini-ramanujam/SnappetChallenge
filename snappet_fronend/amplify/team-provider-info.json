@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-snappet-dev-190223-authRole",
+      "UnauthRoleArn": "arn:aws:iam::658340027427:role/amplify-snappet-dev-190223-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::658340027427:role/amplify-snappet-dev-190223-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-snappet-dev-190223-deployment",
+      "UnauthRoleName": "amplify-snappet-dev-190223-unauthRole",
+      "StackName": "amplify-snappet-dev-190223",
+      "StackId": "arn:aws:cloudformation:eu-west-1:658340027427:stack/amplify-snappet-dev-190223/4f862d90-5257-11ee-a7cb-0a009adc268d",
+      "AmplifyAppId": "d2sn3qrf6xuouk"
+    },
+    "categories": {
+      "auth": {
+        "snappetd98aa418": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
