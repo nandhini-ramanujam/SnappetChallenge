@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-body p-6">
+      <h5 class="card-title">Domain level Engagement</h5>
+      <p class="card-text pt-4 pb-2">Overview of today's students engagement, highlighting their participation in
+        various domains within
+        each subject.</p>
+      <div class="row mt-4">
+        <div class="col" *ngIf="subjectChart">
+          <canvas baseChart [type]="'pie'" [datasets]="subjectChart.dataSets" [labels]="subjects"
+            [options]="subjectChart.options" [legend]="subjectChart.legent">
+          </canvas>
+        </div>
+        <div *ngFor="let chart of domainCharts" class="col">
+          <canvas baseChart [type]="'pie'" [datasets]="chart.dataSets" [labels]="chart.lables" [options]="chart.options"
+            [legend]="chart.legent">
+          </canvas>
+        </div>
+      </div>
+      <app-notification *ngIf="loadError"></app-notification>
+      <app-loader *ngIf="isLoading"></app-loader>
+    </div>
+  </div>
+</div>

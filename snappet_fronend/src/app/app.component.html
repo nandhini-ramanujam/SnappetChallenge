@@ -1,0 +1,31 @@
+<amplify-authenticator>
+  <ng-template amplifySlot="authenticated" let-user="user" let-signOut="signOut">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" [routerLink]="['/dashboard']">
+          <img src="../assets/Snappet_Logo_2022_RGB-300x85.png" height="40" alt="Snappet Logo">
+        </a>
+        <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary fw-bold" [routerLink]="['/dashboard']">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary fw-bold" [routerLink]="['/students-performance']">Students Performance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <button type="button" class="btn btn-primary" (click)="signOut()">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </ng-template>
+
+</amplify-authenticator>
