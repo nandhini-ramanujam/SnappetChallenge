@@ -19,6 +19,15 @@ This web application is built with Angular and integrates with various AWS servi
 - Dashboard to visualize today's overall engagement of the whole class in each subjct.
 - Student performance overview to visualize today's performance in various subjects.
 
+Backend application
+
+Navigate to snappet_infra_backend from the root of the directory to to check the
+AWS infrastructure built with AWS CDK & microservices.
+
+MVP archtecture:
+
+![Alt Text](./architecture.jpeg)
+
 ### Prerequisites to run the frontend application in local
 
 - Angular: Version 16.0.0
@@ -49,8 +58,3 @@ Run unit tests
 ```bash
 npm run test
 ```
-
-Backend application
-
-Navigate to snappet_infra_backend from the root of the directory to to check the
-AWS infrastructure built with AWS CDK & microservices.
